@@ -4,7 +4,7 @@ Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com Sag
 
 ## 📋 Pré-requisitos
 
-Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira nosso repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
+Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira no repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
 
 
 ## 🎯 Objetivos Deste Desafio de Projeto (Lab)
@@ -18,19 +18,25 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 ### 1. Selecionar Dataset
 
--   Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de ML. Sinta-se à vontade para gerar/enriquecer seus próprios datasets, quanto mais você se engajar, mais relevante esse projeto será em seu portfólio.
--   Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
--   Faça o upload do dataset no SageMaker Canvas.
+- Após estar logado no AWS Sagamaker Studio clique em Open Canvas.
 
--   ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/ae6b9799-cb32-413b-a65e-53f22dfeacc4)
+ ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/ae6b9799-cb32-413b-a65e-53f22dfeacc4)
 
-- ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/234f0c2b-b793-4e3a-baa6-d862cae4b459)
+- Será direcionado para esta tela : 
 
-- ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/63e77fc9-dc7b-40df-b9f2-0d13f8f762ad)
+ ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/234f0c2b-b793-4e3a-baa6-d862cae4b459)
 
-- ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/0256fe3c-eb9c-4959-9762-e25bae673106)
+ - Aqui vai clicar em Datasets
 
-- ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/d52c597a-eb7a-443d-9c11-a676cbedfa2e)
+![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/63e77fc9-dc7b-40df-b9f2-0d13f8f762ad)
+
+- E logo em seguida clicar em Import Data e selecionar Tabular
+
+![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/0256fe3c-eb9c-4959-9762-e25bae673106)
+
+- Vai aparecer a opção para informar o nome do dataset
+
+ ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/d52c597a-eb7a-443d-9c11-a676cbedfa2e)
 
 - ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/69694685-77fa-423f-a1fa-dfa74aa22e67)
 
