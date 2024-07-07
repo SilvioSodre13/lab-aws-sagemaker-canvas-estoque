@@ -63,10 +63,6 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 ### 2. Construir/Treinar
 
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
-
 
 Com o dataset selecionado, clique em create a model e coloque o nome do modelo (Nesse caso, Previsao_Estoque)
 
@@ -104,10 +100,42 @@ Após configurada a tela anterior voltamos nesta tela e para o treino rápido se
 
 ### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+A feature ****Preço****  influencia significamente a previsão de estoque. Obviamente que o preço de item pode interferir na sua demanda.
+
   ![image](https://github.com/SilvioSodre13/lab-aws-sagemaker-canvas-estoque/assets/101529833/12d86a82-b225-4da0-96b2-a6cbd0d192f7)
+
+#### ***Avaliando as Métricas de Performance do Modelo.***
+
+
+
+
+****AVG.wQL (Average Weighted Quantile Loss): 0.318****
+
+A métrica AVG.wQL de 0,318 representa a perda média ponderada por quantil. Quanto menor esse valor, melhor o desempenho do modelo em prever os diferentes percentis (P10, P50, P90). Um valor de 0,318 sugere que o modelo ainda pode ser aprimorado para melhorar a precisão das previsões por quantil.
+
+
+- ****MAPE (Mean Absolute Percentage Error): 1.776****
+
+O MAPE de 1.776 indica que, em média, as previsões do modelo têm um erro percentual absoluto de 177,6% em relação aos valores reais. Esse é um valor muito alto, sugerindo que o modelo não está realizando previsões precisas.
+
+****WAPE (Weighted Absolute Percentage Error): 0.524****
+
+O WAPE de 0,524 significa que o erro absoluto ponderado pelas magnitudes dos valores reais é de 52,4%. Essa métrica também aponta para um desempenho insatisfatório do modelo, com erros significativos.
+
+****RMSE (Root Mean Squared Error): 33.109****
+
+O RMSE de 33,109 indica que, em média, as previsões do modelo têm um erro quadrático médio de 33,109 unidades. Esse valor é relativamente alto, sugerindo que o modelo tem dificuldade em fazer previsões precisas.
+
+****MASE (Mean Absolute Scaled Error): 0.769****
+
+O MASE de 0,769 é menor que 1, o que significa que o modelo tem um desempenho melhor que uma previsão ingênua (como a última observação). Isso é um ponto positivo, mas ainda assim indica que o modelo pode ser aprimorado.
+
+
+Em resumo, as métricas apresentadas indicam que o modelo de séries temporais treinado no SageMaker Canvas não está apresentando um desempenho satisfatório. 
+
+O MAPE, WAPE e RMSE apontam para erros significativos nas previsões, enquanto o MASE e a AVG.wQL sugerem que o modelo pode ser aprimorado. 
+
+Portanto, serão necessários ajustes e refinamentos adicionais no modelo para melhorar sua precisão e confiabilidade.
 
 
 ### 4. Prever
